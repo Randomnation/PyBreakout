@@ -5,6 +5,8 @@ import random
 
 from Game.Bricks import *
 from Game.Shared.GameConstants import GameConstants
+
+
 class Level:
 
     def __init__(self, game):

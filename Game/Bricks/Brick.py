@@ -1,6 +1,7 @@
 from Game.Shared import GameObject
 from Game.Shared import GameConstants
 
+
 class Brick(GameObject):
 
     def __init__(self, position, sprite, game):

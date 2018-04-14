@@ -1,5 +1,6 @@
 import os
 
+
 class GameConstants:
     BRICK_SIZE = [100, 30]
     BALL_SIZE = [16, 16]

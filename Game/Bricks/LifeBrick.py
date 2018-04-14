@@ -1,5 +1,7 @@
 from Game.Bricks import Brick
 from Game.Shared import *
+
+
 class LifeBrick(Brick):
 
     def __init__(self, position, sprite, game):

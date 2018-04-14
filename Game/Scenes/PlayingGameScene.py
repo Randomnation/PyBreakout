@@ -2,6 +2,7 @@ import pygame
 from Game.Scenes.Scene import Scene
 from Game.Shared import *
 
+
 class PlayingGameScene(Scene):
 
     def __init__(self, game):
@@ -55,7 +56,6 @@ class PlayingGameScene(Scene):
             if not brick.isDestroyed():
                 game.screen.blit(brick.getSprite(), brick.getPosition())
 
-
         pad.setPosition((pygame.mouse.get_pos()[0], pad.getPosition()[1]))
         game.screen.blit(pad.getSprite(), pad.getPosition())
 
@@ -64,7 +64,6 @@ class PlayingGameScene(Scene):
         self.addText("Your Score: " + str(game.getScore()),
                      x = 0,
                      y = GameConstants.SCREEN_SIZE[1] - 60, size = 30)
-
 
         self.addText("Lives: " + str(game.getLives()),
                      x = 0,
